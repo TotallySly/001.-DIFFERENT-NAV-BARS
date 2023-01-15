@@ -15,23 +15,26 @@ hamburgerControls.forEach((hamburgerControl) => {
 })
 
 hamburgerOpen.addEventListener('click', () => {
-    // navigationLinks.classList.toggle('display-none')
+    navigationLinks.classList.toggle('display-none')
     hamburgerOpen.classList.add('display-none')
     hamburgerClose.classList.remove('display-none')
 })
 
 hamburgerClose.addEventListener('click', () => {
-    // navigationLinks.classList.toggle('display-none')
+    navigationLinks.classList.toggle('display-none')
     hamburgerOpen.classList.remove('display-none')
     hamburgerClose.classList.add('display-none')
 })
 
-/**
- * To make something visible or not for devices smaller than 575px
- */
+const chevronMenu = document.querySelector('.fa-chevron-down')
+const dropDownMenu = document.querySelector('.smaller-menu-items')
 
-// if (window.innerWidth < 768) {
-//     .classList.add('display-none')
-// } else {
-//     .classList.remove('display-none')
-// }
+chevronMenu.addEventListener('click', () => {
+    dropDownMenu.classList.remove('display-none')
+
+    if (!dropDownMenu.classList.contains('display-none')) {
+        chevronMenu.addEventListener('click', () => {
+            dropDownMenu.classList.toggle('display-none')
+        })
+    }
+})
