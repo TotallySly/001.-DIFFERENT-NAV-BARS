@@ -39,7 +39,7 @@ body {
 
 .navigation-bar .hamburger-container {
     position: relative;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
 }
 
 .navigation-bar .hamburger-container i {
