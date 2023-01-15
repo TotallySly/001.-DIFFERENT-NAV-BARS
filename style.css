@@ -53,6 +53,7 @@ body {
 .navigation-bar .navigation-links {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 }
 
 @media (min-width: 575px) {
