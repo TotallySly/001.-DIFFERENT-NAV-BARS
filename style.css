@@ -36,3 +36,13 @@ body {
     letter-spacing: 0.1rem;
     padding: 1rem;
 }
+
+.navigation-bar .hamburger-container {
+    position: relative;
+    margin-right: 0.5rem;
+}
+
+.navigation-bar .hamburger-container i {
+    position: absolute;
+    inset: 0;
+}
